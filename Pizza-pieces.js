@@ -11,3 +11,7 @@ If the number of cuts is negative, return -1 instead.
 
 
 // Solution
+
+function maxPizza(cut) {
+  return cut < 0 ? -1 : 1 + cut * (cut + 1) / 2;
+}
