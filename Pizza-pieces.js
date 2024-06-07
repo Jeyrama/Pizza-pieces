@@ -8,3 +8,6 @@ Given the number of pizza cuts,
 find the maximum amount of pieces of pizza that you can get (not necessarily of equal size). 
 If the number of cuts is negative, return -1 instead.
 */
+
+
+// Solution
