@@ -17,3 +17,29 @@ function maxPizza(cut) {
 }
 
 // or
+
+// function maxPizza(cuts) {
+//   // Set base case to 0
+//   // iterate from 0 to cuts
+//   // plug cuts into formula
+//   // keep track of last number of slices
+//   // return the running total
+//   let slices = 1;
+  
+//   if (cuts < 0){
+//     return -1
+//   }
+  
+//   for (let i = 1; i <= cuts; i++){
+//     slices += i;
+//   }
+  
+//   return slices;
+// }
+
+const maxPizza = cuts => cuts < 0 ? -1 : Array(cuts).fill("maballs").reduce((acc, _cur, insex) => acc += insex + 1, 1);
+
+// A0 = 1
+// An = A(n-1) + n
+// An = slices
+// N  = cuts
